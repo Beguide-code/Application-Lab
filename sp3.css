@@ -1,0 +1,152 @@
+@font-face {
+    font-family:'Titan One'; 
+    src: url('/Titan_One.zip/TitanOne-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: #87ceeb;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+     height: 100vh; /* Celui qui met le big au centre centre */
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   min-width: 450px; /*  <!--le plus petit possible--> */
+   background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #000000;
+}
+h1
+{
+    color: #000000;
+    text-transform: capitalize; /* en cas de creation de div, mettre
+    de tel sorte que ça reste en ligne avec le flex-wrap: nonwrap; */
+}
+#enter{
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    width:100%;
+    border: 1px solid #000000;
+    outline: none;
+}
+#textBox{
+  text-align: center;
+    margin: 10px 0;
+    padding: 15px 20px;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 18px;
+
+}.check{
+  text-decoration: 0;
+    width: 100%;
+    padding: 15px;
+    color: #ffffff;
+    width: 100%;
+    border: 0;
+    border-radius: 6PX;
+    cursor: pointer;
+    background-color:#007bff;
+    text-align: center;
+    margin-bottom: 10px 0;
+    outline: none;
+}
+.smallone{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    text-align: center;
+    gap: 6px;
+
+}
+.reset {
+     text-decoration: 0;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px 0;
+    color: #000000;
+    border: 0;
+    border-radius: 6PX;
+    cursor: pointer;
+    background-color:#fe4949;
+    text-align: center;
+    font-size: 18px;
+}
+.hint{
+      text-decoration: 0;
+    width: 100%;
+    padding: 15px;
+    color: #000;
+    border: 0;
+    border-radius: 6PX;
+    cursor: pointer;
+    background-color:#fe4949;
+    text-align: center;
+    font-size: 18px;
+
+}
+#result{
+    font-family: 'Titan One', sans-serif;
+    margin-top: 10px;;
+    color: #000000;
+}
+#check:hover{
+    background-color: #0056b3;
+}
+.Restart:hover{
+    background-color: #870808;
+}
+.hint:hover{
+    background-color: #870808;
+}
+.rightthings{
+    min-width: 150px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.countdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.countdown .timer{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    width: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Titan One', sans-serif;
+    text-align: center;
+}
+.countdown #center{
+    position: fixed;
+    bottom: 20px;
+    margin-bottom: 10px;
+    left: 85%;
+    transform: translateX(-50%);
+    color: #010101;
+    font-size: 32px;
+    font-family: 'Titan One', sans-serif;
+    font-weight: 900;
+}

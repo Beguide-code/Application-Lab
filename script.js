@@ -266,16 +266,18 @@ function getLetter(){
 
  //Verify if the letter entered is part of the random country
  function checkMatch(){
+    let j = 0 ;
         //control variable checks if a choice was wrong
     let finish = document.querySelector(".reset");
     for(let i=0; i<(randomCountry.length);i++){
         if(randomCountry[i] === enteredLetter){
             control++;
+            j++;
             updateContent(i);
         }
     }
      
-    if(control === 0)
+    if(j === 0)
         popUpMessage("I am sorry you guessed wrong. Try again");
     if((count + control) === randomCountry.length){
         alert("Congratulations. You rightly guessed the country");
